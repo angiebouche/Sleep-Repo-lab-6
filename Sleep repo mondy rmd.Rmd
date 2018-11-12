@@ -1,0 +1,23 @@
+---
+title: "Sleep practice monday"
+author: "Angie Bouche"
+date: "November 12, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
+sleep <- read.csv("sleep.csv")
+
+View(sleep)
+
+brainsize_hist <- ggplot(sleep, aes(x =species))+
+   geom_histogram(aes()) 
+
+
+View(brainsize_hist)
+
+```
